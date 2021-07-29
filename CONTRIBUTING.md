@@ -13,11 +13,12 @@
   - [How Can I Contribute?](#how-can-i-contribute)
   - [Setting up your Development machine](#setting-up-your-development-machine)
     - [Install System-level dependencies](#install-system-level-dependencies)
-      - [Node.js, npm, node-gyp](#nodejs-npm-node-gyp)
+      - [Node.js](#nodejs)
       - [Git](#git)
       - [Debian/Ubuntu](#debianubuntu)
       - [Fedora](#fedora)
       - [Windows](#windows)
+      - [npm](#npm)
       - [node-gyp](#node-gyp)
       - [Lerna](#lerna)
     - [Clone repository with submodule](#clone-repository-with-submodule)
@@ -52,7 +53,7 @@ As a basic rule, before filing issues, feature requests or anything else. Take a
 
 ### Install System-level dependencies
 
-#### Node.js, npm, node-gyp
+#### Node.js
 
 Please make sure you are conforming to the `engines` requirements used by the developers/contributors as specified in the [package.json file](./package.json#engines).
 
@@ -62,7 +63,7 @@ Currently, these are the combinations of system dependencies that work for MacOS
 node -v
 v14.17.3
 npm -v
-6.14.13
+7.20.2
 ```
 
 #### Git
@@ -89,6 +90,14 @@ Please make sure you run this command as an administrator:
 
 ```bash
 npm i -g windows-build-tools --vs2015
+```
+
+#### npm
+
+In preparation of upgrading `nodejs` to `v16`, we are trying to upgrade `npm` first
+
+```bash
+npm i -g npm@7.20.2
 ```
 
 #### node-gyp
