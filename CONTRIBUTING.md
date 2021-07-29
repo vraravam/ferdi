@@ -61,7 +61,7 @@ Currently, these are the combinations of system dependencies that work for MacOS
 
 ```bash
 node -v
-v14.17.3
+v16.4.2
 npm -v
 7.20.2
 ```
